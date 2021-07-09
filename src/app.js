@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const deleteAllButton = document.querySelector("#delete-all");
   deleteAllButton.addEventListener("click", handleDeleteAllClick);
-
+  
   function handleFormSubmit(event){
     event.preventDefault();
     const cityStateItem = createCityStateItem(event.target);
@@ -32,11 +32,11 @@ document.addEventListener('DOMContentLoaded', () => {
     cityStateItem.appendChild(location);
 
     return cityStateItem;
-  };
+  }
 
-  function handleDeleteAllClick(event){
+  function handleDeleteAllClick(){
     const cityStateList = document.querySelector("#city-state-list");
     cityStateList.innerHTML = "";
-  };
+  }
 
 });
