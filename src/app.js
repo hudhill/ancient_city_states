@@ -18,17 +18,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const cityStateItem = document.createElement('li');
     cityStateItem.classList.add("city-state-item");
+
     const name = document.createElement('h2');
     name.textContent = form.name.value;
     cityStateItem.appendChild(name);
     const timePeriod = document.createElement('p');
-    timePeriod.textContent = form.timePeriod.value;
+    timePeriod.textContent = form.founding.value;
     cityStateItem.appendChild(timePeriod);
     const culture = document.createElement('h3');
     culture.textContent = form.culture.value;
     cityStateItem.appendChild(culture);
     const location = document.createElement('h4');
-    location.textContent = form.location.value;
+    location.textContent = form.region.value;
     cityStateItem.appendChild(location);
 
     return cityStateItem;

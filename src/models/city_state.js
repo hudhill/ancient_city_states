@@ -1,8 +1,8 @@
-const CityState = function(name, timePeriod, culture, location){
+const CityState = function(name, founding, culture, region){
   this.name = name;
-  this.timePeriod = timePeriod;
+  this.founding = founding;
   this.culture = culture;
-  this.location = location;
+  this.region = region;
 };
 
 module.exports = CityState;
