@@ -22,14 +22,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const name = document.createElement('h2');
     name.textContent = form.name.value;
     cityStateItem.appendChild(name);
-    const timePeriod = document.createElement('p');
-    timePeriod.textContent = form.founding.value;
-    cityStateItem.appendChild(timePeriod);
     const culture = document.createElement('h3');
-    culture.textContent = form.culture.value;
+    culture.textContent = `(${form.culture.value})`;
     cityStateItem.appendChild(culture);
-    const location = document.createElement('h4');
-    location.textContent = form.region.value;
+    const timePeriod = document.createElement('p');
+    timePeriod.textContent = `Founded in the year ${form.founding.value} BCE`;
+    cityStateItem.appendChild(timePeriod);
+    const location = document.createElement('p');
+    location.textContent = `in the region of modern day ${form.region.value}`;
     cityStateItem.appendChild(location);
 
     return cityStateItem;

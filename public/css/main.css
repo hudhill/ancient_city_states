@@ -1,6 +1,6 @@
 body {
   text-align: center;
-  list-style-type: none;
+  font-family: "Baskerville"; 
 }
 
 #new-item-form {
@@ -21,14 +21,15 @@ body {
 }
 
 .city-state-item {
+  font-family: "Academy Engraved LET", Arial;
   margin: 0.5rem 0.5rem;
   padding: 0.5rem 0.8rem;
   border: 1px solid #2a48a0;
   border-radius: 5%;
   min-width: 300px;
-  background-color:burlywood;
+  background-color:rgb(187, 138, 75);
 }
 
 .city-state-item:hover {
-  background-color:cornsilk;
+  background-color:rgb(187, 158, 121);
 }
